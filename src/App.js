@@ -1,16 +1,16 @@
-import "./App.css";
-import Header from "./Header";
-import AddTask from "./AddNewTask";
-import TaskList from "./TaskList";
+import React from "react";
+import Header from "./components/Header";
+import InputBar from "./components/InputBar";
+import TaskList from "./components/TaskList";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <div>
       <Header />
-      <AddTask />
-      <TaskList />
+      <InputBar></InputBar>
+      <TaskList></TaskList>
     </div>
   );
-}
+};
 
 export default App;
